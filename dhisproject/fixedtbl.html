@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view</title>
+	<link rel="stylesheet" href="bt/bt/css/bootstrap.css">
+</head>
+<body>
+
+	<div id="headerDiv">
+		<div class="container card-body text-center" style="border: solid 2px lightgray; margin-top: 2%; padding-top: 10px"><label class="oowncss text-light mb-3">
+			<br>
+			<p style="color: black">Malaria Health Facility Monthly Reporting Form</p>
+		</label></div>
+	</div>
+	<br><br>
+	<div id="selection">
+		<div class="container card-body text-center bg-primary"><label class="oowncss text-light mb-3">Organisation Unit </label>
+
+			<select onChange="selectChanged()" name="organisationUnit" class="btn btn-outline-light dropdown-toggle p-2 m-2" id="pOyLJltufaO">
+				<option id="xPcax9XyWv7">Police College Clinic</option>
+				<option id="GgLrHxh0Peb">Chancellor College Clinic</option>
+				<option id="Pv9cscXe92H">Matawale Health Centre</option>
+				<option id="YVC7t1ypWDH">Zomba Central Hospital</option>
+				<option id="IK9HLWe3IYC">Banja La Mtsogolo</option>
+				<option id="UEJDR2pWdEj">Nansawa Health Centre</option>
+				<option id="aayOdncNtbN">Old Naisi Health centre</option>
+				<option id="Damjb2ofWvS">Zomba Prison Health Centre</option>
+				<option id="pOyLJltufaO">Cobbe Barracks Health Centre</option>
+			</select>
+
+			<label class="oowncss text-light mb-3">Year</label>
+			<select onChange="selectChanged()" name="period" id="period" class="btn btn-outline-light dropdown-toggle p-2 m-2">
+				<option>2019</option>
+				<option>2018</option>
+				<option>2017</option>
+				<option>2016</option>
+				<option>2015</option>
+				<option>2014</option>
+				<option>2013</option>
+				<option>2012</option>
+				<option>2011</option>
+				<option>2010</option>
+			</select>
+
+			<label class="oowncss text-light mb-3">Month</label>
+			<select onChange="selectChanged()" name="period" id="month" class="btn btn-outline-light dropdown-toggle p-2 m-2">
+				<option id="01">January</option>
+				<option id="02">February</option>
+				<option id="03">March</option>
+				<option id="04">April</option>
+				<option id="05">May</option>
+				<option id="06">June</option>
+				<option id="07">July</option>
+				<option id="08">August</option>
+				<option id="09">September</option>
+				<option id="10">October</option>
+				<option id="11">November</option>
+				<option id="12">December</option>
+			</select>
+		</div>
+	</div>
+	<div class="container">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<td>Name</td><td> less than 5 years</td><td>5 or more years</td>
+				</tr>
+			</thead>
+			<tbody id="viewdata">
+					
+			<tr id="bnYOiwtIEGD">
+				<td>Confirmed cases receiving anti malarial medication</td>
+				<td id="m1"></td>
+				<td id="m2"></td>
+			</tr>
+			<tr id="gi8pO63dS9Q">
+				<td>Inpatient malaria deaths</td>
+				<td id="m3"></td>
+				<td id= "m4"></td>
+			</tr>
+			<tr id="kG6hGLGGbVL">
+				<td>Inpatient deaths</td>
+				<td id = "m5"></td>
+				<td id = "m6"></td>
+			</tr>
+				<tr id="J1V9SvQi5qA"><td>Confirmed malaria cases(microscopy)</td>
+					<td id = "m7"></td>
+					<td id= "m8"></td>
+			</tr>
+			<tr id="QTxyMxMzQZW">
+				<td>Presumed (clinically diagonosed) malaria cases</td>
+				<td id= "m9"></td>
+				<td id= "m10"></td>
+			</tr>
+			<tr id="USuBjWTPquz">
+				<td>Inpatients</td>
+				<td id = "m11"></td>
+				<td id = m12></td>
+			</tr>
+			<tr id="rQx4lWnwr0c">
+				<td>Total Suspected Malaria cases</td>
+				<td id = "m13"></td>
+				<td id = "m14"></td>
+			</tr>
+			<tr id="qZ7zh9SeAJd">
+				<td>Suspected malaria cases tested(microscopy)</td>
+				<td id ="m15"></td>
+				<td id= "m16"></td>
+			</tr>
+			<tr id="wUIoXicmEwz">
+				<td>Confirmed malaria cases</td>
+				<td id= "m17"></td>
+				<td id= "m18"></td>
+			</tr>
+			<tr id="R54Rg3MsSbk">
+				<td>Presumed malaria cases(clinically diagonosed)</td>
+				<td id = "m19"></td>
+				<td id = "m20"></td>
+			</tr>
+			<tr id="Sd0TeC4VzqW">
+				<td>Presumed malaria cases receiving anti malarial medication</td>
+				<td id = "m21"></td>
+				<td id = "m22"></td>
+			</tr>
+			<tr id="PSaHYc6EqvW">
+				<td>Suspected malaria cases tested(mRDT)</td>
+				<td id= "m23"></td>
+				<td id = "m24"></td>
+			</tr>
+			<tr id="SjBzTKJitha">
+				<td>Positive Malaria cases(microscopy)</td>
+				<td id = "m25"></td>
+				<td id= "m26"></td>
+			</tr>
+			<tr id="RG2XDmzWECE">
+				<td>Positive malaria cases(mRDT)</td>
+				<td id= "m27"></td>
+				<td id = "m28"></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+	<script src="fixedtbl.js" type="text/javascript"></script>
+	<!-- <script type="text/javascript" src="formInput.js"> -->
+
+
+</html>

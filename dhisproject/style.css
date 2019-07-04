@@ -1,0 +1,19 @@
+/*.oowncss{
+	margin-right:20% !important;
+	text-align: center !important;
+	color: red;
+}
+*/
+/*.element{
+	margin-right:15% !important;
+	
+}*/
+
+.col-sm-6 element:hover{
+
+background-color: gray; 
+}
+
+.formtitle{
+	text-align: center !important;
+}
